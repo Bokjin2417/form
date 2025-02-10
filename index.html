@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+fieldset{
+    width: 50%;
+}
+
+body{
+    margin: 20px;
+}
+
+
+table{
+    border: 1px solid black;
+    margin: 5px;
+    width: 40%;
+}
+td,th
+{
+    border: 1px solid black;
+}
+
+.input-textarea{
+    height: 50px;
+}
+
+    </style>
+
+
+</head>
+<body>
+<fieldset>    
+<form>
+<div class="form-group">
+<label id="name-label" for="name">Name </label>
+<input 
+type="text"
+name="name"
+id="name"
+class="form-control"
+placeholder="Please enter your name"
+/>
+</div>
+
+
+
+<div class="form-group">
+    <label id="email-label" for="
+    ">Email </label>    
+    <input 
+    type="text"
+    name="email"
+    id="email"
+    class="form-control"
+    placeholder="Please enter your email"
+    />
+    </div>
+    
+
+<div class="form-group">
+    
+    <p>Adress</p> <textarea
+    id="adress"
+    class="input-textarea"
+    name="adress"
+    placeholder="Enter your complete adress here...">
+    </textarea>
+    </div>
+
+<div class="form-group">
+    <label id="postal-label" for="postal">Postal Code</label>
+    <input 
+    type="number"
+    name="number"
+    id="number"
+    class="form-control"
+    placeholder="Enter your postal code"
+    />
+
+</div>
+
+    <br>
+    <br> 
+
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Part Number</th>
+            <th>Quantity</th>
+            <th>Unit Price</th>
+            <th>Subtotal</th>
+        </tr>
+        
+        <tr>
+            <td>EconoBox</td>
+            <td>LB100</td>
+            <td style="border-top: 3px solid black; border-left: 2px solid black;">3</td>
+            <td>R5</td>
+            <td style="border-top: 3px solid black; border-left: 2px solid black;">R<b>1</b>5</td>
+                </tr>
+
+        <tr>
+            <td>StandardBox</td>
+            <td>LB200</td>
+            <td style="border-top: 3px solid black; border-left: 2px solid black;">4</td>
+            <td>R10</td>
+            <td style="border-top: 3px solid black; border-left: 2px solid black;">R40</td>
+        </tr>
+
+        <tr>
+            <td>Prenium BoxTD></td>
+            <td>LB300</td>
+            <td style="border-top: 3px solid black; border-left: 2px solid black;">1</td>
+            <td>R15</td>
+            <td style="border-top: 3px solid black; border-left: 2px solid black;">R<b>1</b>5</td>
+        </tr>
+
+        <tr>
+            <td>Deluxe BoxTD></td>
+            <td>LB400</td>
+            <td style="border-top: 3px solid black; border-left: 2px solid black;">0</td>
+            <td>R20</td>
+            <td style="border-top: 3px solid black; border-left: 2px solid black;">&nbsp;</td>
+        </tr>
+
+        <tr>
+            <td>Super Deluxe BoxTD></td>
+            <td>LB500</td>
+            <td style="border-top: 3px solid black; border-left: 2px solid black;">1</td>
+            <td>R30</td>
+            <td style="border-top: 3px solid black; border-left: 2px solid black;">R30</td>
+        </tr>
+
+        <tr>
+            <td colspan="3"></td>
+                <td>Total</td>
+                <td style="border-top: 3px solid black; border-left: 2px solid black;">R100</td>  
+                  
+
+
+        </table>
+
+        <br>
+        <br>
+
+<h3>Credit Card Details</h3>
+
+<div class="form-group">
+    
+    <label>
+        <p>Card Type:</p>
+           <input
+ name="type"
+ value="mastercard"
+ type="radio"
+ class="input-radio"
+    > </label>
+
+Mastercard</div>
+
+
+<div class="form-group">
+    <label>
+    <input
+ name="type"
+ value="visa"
+ type="radio"
+ class="input-radio"
+    ></label>Visa</div>
+
+
+    <div class="form-group">
+        <label>
+        <input
+     name="type"
+     value="americanexpress"
+     type="radio"
+     class="input-radio"
+        ></label>American Express</div>
+        
+<div class="form-group">
+    <label>
+    <input
+ name="type"
+ value="dinersclub"
+ type="radio"
+ class="input-radio"
+    ></label>Diners Club</div>
+
+
+    <div class="form-group">
+        <label id="card-number" for="card-number">Card number:</label>
+        <input 
+        type="text"
+        name="card-number"
+        id="card-number"
+        class="form-control"
+        placeholder="Your card number"
+        />
+        </div>
+
+
+        <div class="form-group">
+            <label id="expiry" for="expiry">Expiry Date: </label>
+            <input 
+            type="text"
+            name="expiry"
+            id="expiry"
+            class="form-control"
+            placeholder="expiry Date"
+            />
+            </div>
+    
+            
+<div class="form-group">
+    
+    <p>Delivery Adress: </p> <textarea
+    id="delivery-adress"
+    class="input-textarea"
+    name="delivery-adress"
+    placeholder="Enter your complete adress here...">
+    </textarea>
+    </div>
+
+    <div class="button">
+        <button type="submit">Send Order</button>
+        <button type="reset">Clear form</button>
+    </div>
+</form>
+</fieldset>
+
+</body>
+</html>
